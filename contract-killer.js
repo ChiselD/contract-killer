@@ -78,9 +78,9 @@ function seduce(target) {
 	var seduced = false;
 	// You get only one try to seduce them - here we go...
 	var targetWillpower = Math.ceil(Math.random() * 100);
-	var mySexiness = Math.ceil(Math.random() * 100);
+	var yourSexiness = Math.ceil(Math.random() * 100);
 	// Let's see which of you two is more powerful
-	if (mySexiness > targetWillpower) {
+	if (yourSexiness > targetWillpower) {
 		this.achillesHeel = "Seduction worked!";
 		seduced = true;
 	}
