@@ -6,10 +6,10 @@
 // as blinking, and people are constantly hiring contract killers to
 // take you out. You have an established routine for dealing with these
 // assassination attempts. When you find out that there's a contract
-// out on you (yet again) you send your trusty spy to find out certain
+// out on you (yet again) you send your trusty spy to acquire certain
 // pieces of information for you.
-// Based on this information, you follow the routine below to take
-// care of the situation and save your ass.
+// Based on this information, you follow the routine below to defuse
+// the situation and save your ass.
 
 
 // Data in the following section (variables) changes in each case!
