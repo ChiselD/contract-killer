@@ -37,20 +37,26 @@ function saveMyAss(assassin, client) {
 		console.log("Client eliminated!");
 		console.log(client.achillesHeel);
 		console.log("Now let's see about the assassin...");
-	}
-	if (contractHasBeenSigned) {
-		// The assassin's on the job, uh-oh!
-		console.log("Attempting to eliminate assassin.");
-		var assassinEliminated = eliminate(assassin);
-		if (assassinEliminated === true) {
-			console.log("Assassin eliminated!");
-			console.log(assassin.achillesHeel);
+		if (contractHasBeenSigned) {
+			// The assassin's on the job, uh-oh!
+			console.log("Attempting to eliminate assassin.");
+			var assassinEliminated = eliminate(assassin);
+			if (assassinEliminated === true) {
+				console.log("Assassin eliminated!");
+				console.log(assassin.achillesHeel);
+				success();
+			} else {
+				console.log("Could not eliminate assassin :/");
+				failure();
+			}
+		} else {
+			console.log("Turns out the contract wasn't official yet.");
+			console.log("So, no need to worry about the assassin.");
 			success();
 		}
 	} else {
-		console.log("Turns out the contract wasn't official yet.");
-		console.log("So, no need to worry about the assassin.");
-		success();
+		console.log("Could not eliminate client :/");
+		failure();
 	}
 }
 
