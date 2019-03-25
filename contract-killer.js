@@ -30,7 +30,6 @@ var contractHasBeenSigned = true;
 
 
 function saveMyAss(assassin, client) {
-	console.log("running saveMyAss function");
 	// The client needs to be eliminated in any case.
 	console.log("Attempting to eliminate client.");
 	var clientEliminated = eliminate(client);
